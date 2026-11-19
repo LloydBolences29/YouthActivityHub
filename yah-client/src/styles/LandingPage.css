@@ -1,0 +1,372 @@
+.landing {
+  --landing-lime: #d5ff70;
+  --landing-pink: #ff8ac5;
+
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-inline: clamp(1.25rem, 5vw, 5rem);
+  background:
+    radial-gradient(
+      circle at 85% 35%,
+      rgba(133, 88, 255, 0.22),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(46, 123, 255, 0.18),
+      transparent 40%
+    ),
+    #081735;
+}
+
+.landing-header,
+.landing-hero,
+.landing-footer {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+}
+
+.landing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.75rem;
+}
+
+.landing-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.landing-brand > span {
+  color: var(--landing-lime);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.landing-header-note {
+  color: #c2cce0;
+  font-size: 0.8rem;
+}
+
+.landing-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  padding-block: clamp(3rem, 7vw, 7rem);
+}
+
+.landing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid rgba(213, 255, 112, 0.3);
+  border-radius: 999px;
+  background: rgba(213, 255, 112, 0.07);
+  color: var(--landing-lime);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.landing-copy h1 {
+  margin-bottom: 1.5rem;
+  color: white;
+  font-size: clamp(3.25rem, 6.5vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  text-shadow: none;
+}
+
+.landing-copy h1 > span {
+  color: var(--landing-lime);
+}
+
+.landing-description {
+  max-width: 470px;
+  margin-bottom: 2rem;
+  color: #c2cce0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.landing-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.landing-cta {
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  background: var(--landing-lime);
+  color: #142309;
+  box-shadow: 0 5px 0 #7d9b35;
+}
+
+.landing-cta:hover {
+  background: #e2ff9e !important;
+  color: #142309 !important;
+  box-shadow: 0 7px 0 #7d9b35 !important;
+}
+
+.landing-cta > span {
+  font-size: 1.4rem;
+}
+
+.landing-action-note {
+  max-width: 160px;
+  color: #c2cce0;
+  font-size: 0.75rem;
+}
+
+.landing-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 2.5rem;
+  color: #d3dbeb;
+  font-size: 0.8rem;
+}
+
+/* Featured game */
+.landing-preview {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  justify-self: center;
+}
+
+.landing-game-card {
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 28px;
+  background: linear-gradient(150deg, #2847a5, #172b65);
+  box-shadow:
+    12px 12px 0 rgba(4, 12, 35, 0.4),
+    0 25px 65px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  transform: rotate(3deg);
+}
+
+.preview-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.preview-label {
+  color: #d3defa;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.preview-live {
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: var(--landing-lime);
+  color: #233710;
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.preview-trophy {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+}
+
+.landing-game-card h2 {
+  margin-block: 0.5rem 1rem;
+  color: white;
+  font-size: clamp(3.5rem, 6vw, 5rem);
+  line-height: 0.9;
+  text-shadow: 0 4px 0 #10204f;
+}
+
+.landing-game-card h2 > span {
+  display: block;
+  color: var(--color-gold);
+}
+
+.landing-game-card > p {
+  color: #d3defa;
+  font-size: 0.8rem;
+}
+
+.preview-answers {
+  display: grid;
+  gap: 0.6rem;
+  margin-block: 1.5rem;
+}
+
+.preview-answers > div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background: rgba(4, 15, 48, 0.35);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.preview-answers > div > span:first-child {
+  color: #a9bfff;
+  font-size: 0.7rem;
+}
+
+.preview-answers > div > span:last-child {
+  margin-left: auto;
+  color: var(--color-gold);
+}
+
+.preview-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.preview-sticker {
+  position: absolute;
+  top: -18px;
+  right: -12px;
+  z-index: 1;
+  padding: 0.65rem 1rem;
+  border: 2px solid #081735;
+  border-radius: 10px;
+  background: var(--landing-pink);
+  color: #38142a;
+  font-weight: 800;
+  transform: rotate(10deg);
+}
+
+.preview-caption {
+  display: block;
+  margin-top: 2rem;
+  color: #c2cce0;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* Decorative shapes */
+.landing-decoration {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.decoration-star {
+  top: 13%;
+  left: 48%;
+  color: var(--landing-pink);
+  font-size: 3rem;
+  transform: rotate(15deg);
+}
+
+.decoration-ring {
+  bottom: 12%;
+  left: -45px;
+  width: 130px;
+  height: 130px;
+  border: 18px solid rgba(213, 255, 112, 0.1);
+  border-radius: 50%;
+}
+
+.decoration-spark {
+  right: 3%;
+  bottom: 8%;
+  color: #9381ff;
+  font-size: 4rem;
+}
+
+.landing-footer {
+  padding-block: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aab9d4;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .landing-hero {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .landing-copy {
+    text-align: center;
+  }
+
+  .landing-description {
+    margin-inline: auto;
+  }
+
+  .landing-actions,
+  .landing-tags {
+    justify-content: center;
+  }
+
+  .decoration-star {
+    top: 10%;
+    left: auto;
+    right: 5%;
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-header-note {
+    display: none;
+  }
+
+  .landing-brand {
+    font-size: 0.9rem;
+  }
+
+  .landing-badge {
+    font-size: 0.65rem;
+  }
+
+  .landing-copy h1 {
+    font-size: 3.25rem;
+  }
+
+  .landing-actions {
+    flex-direction: column;
+  }
+
+  .landing-action-note {
+    max-width: none;
+  }
+
+  .landing-game-card {
+    transform: rotate(1deg);
+  }
+
+  .preview-sticker {
+    right: 0;
+    font-size: 0.8rem;
+  }
+}
