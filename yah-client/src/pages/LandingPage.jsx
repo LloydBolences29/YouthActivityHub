@@ -15,7 +15,7 @@ const LandingPage = () => {
       <header className="landing-header">
         <Link to="/" className="landing-brand">
           <span aria-hidden="true">✦</span>
-          Adventist Youth Hub
+          Adventist Youth Activity Hub
         </Link>
 
         <span className="landing-header-note">Good friends. Great games.</span>

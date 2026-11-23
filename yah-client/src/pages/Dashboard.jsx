@@ -41,7 +41,7 @@ export default function Dashboard() {
             <span className="dashboard-brand-icon" aria-hidden="true">
               ✦
             </span>
-            Youth Activity Hub
+            Adventist Youth Activity Hub
           </Link>
 
           <span className="dashboard-header-label">Let’s play together</span>
